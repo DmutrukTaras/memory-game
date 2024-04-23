@@ -44,3 +44,25 @@
         }
     }    
 }
+
+@media only screen and (max-width: 600px) {
+    .card-container {
+        width: 90vw;
+        gap: 15px;
+    }
+
+    .card {
+        margin: 0px;
+        flex-basis: 20%;  
+    }
+
+    .card span {
+        color: #ccc;
+    }
+    .card.flipped, .card.opened {
+        background-color: #fff;
+    }
+    .card.flipped span, .card.opened span {
+        color: #000;
+    }
+}
