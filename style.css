@@ -24,23 +24,19 @@
 
     span {
         font-size: 50px;
-        color: #ccc;
+        color: #000;
+        opacity: 0;
     }
 
     &.flipped {
         transform: rotateY(180deg);
-        background-color: #fff;
-    
-        span {
-            color: #000;
-        }
     }
 
-    &.opened {
+    &.opened, &.flipped {
         background-color: #fff;
     
         span {
-            color: #000;
+            opacity: 1;
         }
     }    
 }
@@ -54,15 +50,5 @@
     .card {
         margin: 0px;
         flex-basis: 20%;  
-    }
-
-    .card span {
-        color: #ccc;
-    }
-    .card.flipped, .card.opened {
-        background-color: #fff;
-    }
-    .card.flipped span, .card.opened span {
-        color: #000;
     }
 }
